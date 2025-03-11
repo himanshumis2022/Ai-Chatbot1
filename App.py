@@ -228,8 +228,8 @@ if st.session_state.logged_in:
         
         # Appointment booking form
         with st.form("appointment"):
-            doctors = ["Dr. Smith (Cardiology)", "Dr. Jones (Pediatrics)"]
-            doc = st.selectbox("Doctor", doctors)
+            doctors = ["Dr. Himanshu (Cardiology)", "Dr. Utkarsh (Pediatrics)"]
+            doc = st.text_input("Select Doctor", placeholder="e.g., Dr. Himanshu (Cardiology)")
             date = st.date_input("Select a date", min_value=datetime.datetime.now().date())
             time = st.time_input("Select a time", value=datetime.datetime.now().time())
 
