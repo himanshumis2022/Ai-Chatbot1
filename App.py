@@ -235,7 +235,7 @@ if st.session_state.logged_in:
             # Combine date and time into a single datetime object
             dt = datetime.datetime.combine(date, time)
 
-            tz = st.selectbox("Timezone", ["Asia/Kolkata"])
+            tz = st.selectbox("Timezone", ["Asia/Delhi"])
             
             if st.form_submit_button("Book Appointment"):
                 tz_obj = timezone(tz)
